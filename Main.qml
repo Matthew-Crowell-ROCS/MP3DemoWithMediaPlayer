@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtMultimedia
+
 ApplicationWindow {
     visible: true
     width: 400
@@ -32,8 +33,7 @@ ApplicationWindow {
 
     MediaPlayer {
         id: audioPlayer
-        // load source from user's Downloads directory on macOS
-        source: "file:///Users/$USER/Downloads/sample.mp3"
+        source: "qrc:/sample-9s.mp3"
         onPlaybackStateChanged: console.log("AudioPlayer State Changed:", playbackState)
         onErrorChanged: console.log("AudioPlayer Error:", errorString)
         audioOutput: AudioOutput {

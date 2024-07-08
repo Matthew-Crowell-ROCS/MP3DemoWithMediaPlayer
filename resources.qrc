@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="sample-9s.mp3">sample-9s.mp3</file>
+    </qresource>
+</RCC>

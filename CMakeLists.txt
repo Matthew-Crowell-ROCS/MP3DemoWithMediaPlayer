@@ -8,8 +8,13 @@ find_package(Qt6 6.4 REQUIRED COMPONENTS Quick Core Multimedia)
 
 qt_standard_project_setup()
 
+qt_add_resources(RESOURCES
+    resources.qrc
+)
+
 qt_add_executable(appMP3Demo
     main.cpp
+    ${RESOURCES}
 )
 
 qt_add_qml_module(appMP3Demo
@@ -17,6 +22,7 @@ qt_add_qml_module(appMP3Demo
     VERSION 1.0
     QML_FILES
         Main.qml
+        RESOURCES resources.qrc
 )
 
 set_target_properties(appMP3Demo PROPERTIES

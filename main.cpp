@@ -14,7 +14,6 @@ int main(int argc, char *argv[])
         Qt::QueuedConnection
         );
 
-    // load Main.qml from MP3Demo QML Module
     engine.load(QUrl(QStringLiteral("qrc:/MP3Demo/Main.qml")));
 
     if (engine.rootObjects().isEmpty())
